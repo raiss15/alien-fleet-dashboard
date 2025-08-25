@@ -1,46 +1,88 @@
-# Getting Started with Create React App
+# Alien Fleet Dashboard 👽
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A retro-futuristic terminal-style web application for managing and viewing alien fleet data. Built with React and TypeScript for the Generate Fall 2025 Software Engineering Challenge.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Alien Fleet List**: View all aliens in a terminal-style table with their basic information
+- **Individual Alien Profiles**: Detailed view of each alien's combat statistics
+- **Retro Terminal Design**: Green-on-black aesthetic with custom styling
+- **Responsive Layout**: Clean grid-based layout that adapts to different screen sizes
+- **Real-time Data**: Fetches alien data from the Generate API
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Frontend Framework**: React 18 with TypeScript
+- **Routing**: React Router v6
+- **Styling**: Custom CSS with terminal aesthetic
+- **HTTP Client**: Axios
+- **Build Tool**: Create React App
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📋 Prerequisites
 
-### `npm test`
+Before you begin, ensure you have the following installed:
+- Node.js (v14 or higher)
+- npm or yarn
+- A Northeastern email address and NUID for API access
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔧 Installation
 
-### `npm run build`
+1. **Clone the repository**
+```bash
+git clone <your-repo-url>
+cd alien-fleet-dashboard
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install dependencies**
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Register for API access**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You need to register with your Northeastern credentials to get an API key:
 
-### `npm run eject`
+4. **Update API configuration**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Add your registration ID to `src/services/alienApi.ts`:
+```typescript
+const YOUR_REGISTERED_ID = 'your-uuid-here'; // Replace with your actual ID
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. **Start the development server**
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The application will open at [http://localhost:3000](http://localhost:3000)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🎮 Usage
 
-## Learn More
+### Home Page
+- Displays all aliens in the fleet
+- Click on any alien row to view their detailed profile
+- Green highlighting on ID numbers and ranks
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Profile Page
+- Shows alien's profile image (or placeholder)
+- Displays combat statistics (ATK, HP, SPD)
+- Visual progress bars for each stat
+- Navigate back to the list with the back button
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎨 Design Features
+
+- **Terminal Aesthetic**: Monospace fonts, green (#00FF00) on black color scheme
+- **Bordered Components**: All major sections have green borders
+- **Stat Visualization**: Progress bars with segmented display
+- **Hover Effects**: Interactive elements respond to user interaction
+- **Consistent Spacing**: Clean grid-based layout
+
+## 📄 License
+
+This project is created for educational purposes as part of the Generate Software Engineering Challenge.
+
+## 🙏 Acknowledgments
+
+- Generate NU for providing the challenge and API
+- Figma design team for the UI mockups
+- The alien fleet for their cooperation in data collection 👽
