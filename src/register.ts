@@ -3,8 +3,8 @@ import axios from 'axios';
 const testRegistration = async () => {
   console.log('🚀 Starting registration process...\n');
   
-  const email = 'rais.s@northeastern.edu'; // ⚠️ REPLACE WITH YOUR ACTUAL EMAIL
-  const nuid = '002830773'; // Your NUID (looks correct)
+  const email = 'rais.s@northeastern.edu'; // REPLACE WITH YOUR ACTUAL EMAIL
+  const nuid = '002830773'; // My NUID 
   
   try {
     // First, try to register

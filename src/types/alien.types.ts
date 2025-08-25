@@ -8,8 +8,8 @@ export interface Alien {
   id: string;  // 6 character ID
   firstName: string;
   lastName: string;
-  type: 'Regular' | 'Elite' | 'Boss';  // Capitalized as per API
-  url: string;  // Profile picture URL
+  type: 'Regular' | 'Elite' | 'Boss';  
+  url: string;  
   stats: AlienStats;
 }
 

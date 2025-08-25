@@ -245,3 +245,153 @@
   background-color: #b8f172;
 } 
 
+@media (max-width: 1024px) {
+  .profile-content {
+    grid-template-columns: 300px 1fr;
+  }
+  
+  .profile-left {
+    padding: 20px;
+  }
+  
+  .profile-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    margin: 10px;
+    min-height: auto;
+  }
+  
+  .profile-header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .header-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .header-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+  
+  .profile-content {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  
+  .profile-left {
+    border-right: none;
+    border-bottom: 2px solid #00FF00;
+    padding: 20px;
+  }
+  
+  .profile-image {
+    height: 250px;
+    margin-bottom: 15px;
+  }
+  
+  .alien-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .alien-badges {
+    position: static;
+    align-self: flex-start;
+  }
+  
+  .alien-name {
+    font-size: 24px;
+  }
+  
+  .stats-title {
+    font-size: 20px;
+    padding: 15px;
+  }
+  
+  .stat-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 10px 15px;
+  }
+  
+  .stat-label {
+    font-size: 20px;
+  }
+  
+  .stat-description {
+    font-size: 14px;
+  }
+  
+  .stat-bar {
+    height: 40px;
+  }
+  
+  .stat-value {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-header {
+    padding: 10px;
+  }
+  
+  .back-button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  
+  .profile-breadcrumb {
+    font-size: 14px;
+  }
+  
+  .profile-left {
+    padding: 15px;
+  }
+  
+  .profile-right {
+    padding: 15px;
+    gap: 20px;
+  }
+  
+  .alien-info {
+    padding: 15px;
+  }
+  
+  .alien-name {
+    font-size: 20px;
+  }
+  
+  .badge {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  
+  .stats-content {
+    padding: 15px;
+  }
+  
+  .stat-bar-container {
+    margin-bottom: 30px;
+  }
+  
+  .stat-header {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  
+  .stat-bar {
+    height: 35px;
+    padding: 4px;
+  }
+}
